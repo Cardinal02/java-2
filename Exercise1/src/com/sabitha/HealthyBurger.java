@@ -36,14 +36,14 @@ public class HealthyBurger extends Burger {
         System.out.println("Topping 4 is " + healthyTopping4 + " and price is $" + healthyTopping4Price);
         totalBurgerPrice();
     }
-    @Override
+
     public void totalBurgerPrice(){
         totalBurgerPrice = plainBurgerPrice + healthyTopping1Price + healthyTopping2Price + healthyTopping3Price + healthyTopping4Price;
         System.out.println("The total cost of your " +burgerName + " is $" + totalBurgerPrice);
 
     }
 
-    @Override
+
         public String toppings() {
 
         int tChoice;

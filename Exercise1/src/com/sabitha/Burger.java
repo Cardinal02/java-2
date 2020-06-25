@@ -44,7 +44,7 @@ public class Burger {
 
     public void plainBurgerPrice(){
         plainBurgerPrice = breadPrice + pattyPrice;
-        System.out.println("The cost of plain burger without additional toppings is $" + plainBurgerPrice);
+        System.out.println("The cost of basic burger without additional toppings is $" + plainBurgerPrice);
     }
 
     public void totalBurgerPrice(){
