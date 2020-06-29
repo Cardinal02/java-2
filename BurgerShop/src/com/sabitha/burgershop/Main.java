@@ -11,6 +11,8 @@ public class Main {
     static Bread bread = Bread.WholeWheat;
     static List<String> toppings;
     static Drink drinkItem;
+    static Meat patty = Meat.GroundBeef;
+
 
 
 
@@ -125,7 +127,7 @@ public class Main {
                 default:
                     drinkItem= Drink.Water;
             }
-            System.out.println("Test: You have ordered a "+burgerType+" on a " + bread+ " with a side of " +sideItem + " and " + drinkItem+ " for drink." );
+            //System.out.println("Test: You have ordered a "+burgerType+" on a " + bread+ " with a side of " +sideItem + " and " + drinkItem+ " for drink." );
 
             //Ordering Meal
             Order order1 = new Order(burgerType,bread,patty);

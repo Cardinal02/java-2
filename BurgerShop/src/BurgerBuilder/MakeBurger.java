@@ -25,7 +25,7 @@ public class MakeBurger implements BurgerBuilder {
         this.toppings = toppings;
         System.out.println("Your burger has " + patty + " on " + bread + " with added toppings " + toppings);
         plainBurgerPrice();
-        totalBurgerPrice();
+        //totalBurgerPrice();
     }
 
 
@@ -62,6 +62,8 @@ public class MakeBurger implements BurgerBuilder {
         breadPriceFinder();
         pattyPriceFinder();
         plainBurgerPrice = breadPrice + pattyPrice;
+        System.out.println(bread + " costs : $"+ breadPrice);
+        System.out.println(patty + " costs :$"+ pattyPrice);
         System.out.println("The cost of basic burger without additional toppings is $" + plainBurgerPrice);
 
     }
@@ -69,7 +71,7 @@ public class MakeBurger implements BurgerBuilder {
     public double totalBurgerPrice() {
         totalToppingPrice = ToppingsBuilder.calculateToppingPrice(toppings);
         totalBurgerPrice = plainBurgerPrice + totalToppingPrice;
-        System.out.println("The cost of total burger price including the toppings is $" + totalBurgerPrice);
+        System.out.println("The cost of total burger including the toppings is $" + totalBurgerPrice);
         return totalBurgerPrice;
 
     }

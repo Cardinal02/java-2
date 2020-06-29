@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ToppingsBuilder {
-
+//toppings selector for regular and deluxe burger
     public static List<String> toppings(int max){
         Scanner scanner = new Scanner(System.in);
         List<String> toppingsList = new ArrayList<>();
@@ -74,7 +74,7 @@ public class ToppingsBuilder {
         }
         return toppingsList;
     }
-
+//calculate total topping price for all toppings
     public static double calculateToppingPrice(List<String> toppings){
         double toppingPrice =0;
         double totalToppingsPrice = 0;
@@ -111,6 +111,8 @@ public class ToppingsBuilder {
                 case "Ranch":
                     toppingPrice = Toppings.Ranch.getToppingPrice();
                     break;
+                case "None":
+                    toppingPrice = Toppings.None.getToppingPrice();
             }
             totalToppingsPrice += toppingPrice;
             System.out.println(temp + " Price is $"+ toppingPrice);
@@ -118,7 +120,7 @@ public class ToppingsBuilder {
 
         return totalToppingsPrice;
     }
-
+//toppings selectorfor healthy burger
     public static List<String> healthyToppings(int max){
         Scanner scanner = new Scanner(System.in);
         List<String> toppingsList = new ArrayList<>();
@@ -179,8 +181,8 @@ public class ToppingsBuilder {
                     break;
                 case 0:
                     topping =Toppings.None;
-//                default:
-//                    System.out.println("Invalid Entry");
+              default:
+                  topping =Toppings.None;
             }
             toppingsList.add(String.valueOf(topping));
         }

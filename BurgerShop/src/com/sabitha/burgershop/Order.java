@@ -25,7 +25,7 @@ public class Order {
     };
     public void addDrinks(Drink drink){
         this.drink = drink;
-        System.out.println("Test:Your drink is " + this.drink);
+        //System.out.println("Test:Your drink is " + this.drink);
     };
     public void addSides(Side side){
         this.side = side;

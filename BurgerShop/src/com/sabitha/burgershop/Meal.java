@@ -21,7 +21,7 @@ public class Meal {
         this.burgerType = burgerType;
         this.drink = drink;
         this.side = side;
-        System.out.println("Test1: You have ordered a " + this.burgerType + " with a drink of " + this.drink + " and a side of " + this.side);
+        System.out.println("You have ordered a " + this.burgerType + " with a drink of " + this.drink + " and a side of " + this.side);
 
 
     }
@@ -31,18 +31,11 @@ public class Meal {
         this.toppings = toppings;
         MakeBurger burger1 = new MakeBurger(bread, patty, toppings);
         wholeBurgerPrice= burger1.totalBurgerPrice();
-        drinkPriceFinder();
-        sidePriceFinder();
-        System.out.println("Drink Price is " + drinkItemPrice);
-        System.out.println("Side Price is "+ sideItemPrice);
 
-        //System.out.println("Your burger has " + patty + " on " + bread + " with added toppings " + toppings);
     }
 
 
-    public void setWholeBurgerPrice(double wholeBurgerPrice) {
-        this.wholeBurgerPrice = wholeBurgerPrice;
-    }
+
 
     public void drinkPriceFinder(){
         switch(drink){
@@ -91,8 +84,12 @@ public class Meal {
     }
 
     public void calculatePrice() {
+        drinkPriceFinder();
+        sidePriceFinder();
+        System.out.println(drink +" costs :$ " + drinkItemPrice);
+        System.out.println(side +" costs :$ "+ sideItemPrice);
         totalOrderPrice= wholeBurgerPrice + sideItemPrice + drinkItemPrice;
-        System.out.println("total price is "+ totalOrderPrice);
+        System.out.println("You total order costs : $ "+ totalOrderPrice);
     }
 
 
