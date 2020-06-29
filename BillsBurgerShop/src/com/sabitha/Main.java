@@ -120,7 +120,7 @@ public class Main {
 
                 }
                 System.out.println("You have chose " + patty + " for protein and the price is $ " + pattyPrice);
-                HealthyBurger healthy = new HealthyBurger(patty, pattyPrice);
+                Burger healthy = new HealthyBurger(patty, pattyPrice);
                 healthy.buildBurger();
                 printInstructions();
                 break;
@@ -167,7 +167,7 @@ public class Main {
                 }
                 System.out.println( "You have chosen "+ bread+ " for bread and the price is $" + breadPrice);
                 System.out.println("You have chosen " + patty + " for protein and the price is $ " + pattyPrice);
-                DeluxeBurger deluxe = new DeluxeBurger(burgerName,bread,breadPrice,patty,pattyPrice);
+                Burger deluxe = new DeluxeBurger(burgerName,bread,breadPrice,patty,pattyPrice);
                 deluxe.buildBurger();
                 printInstructions();
                 break;

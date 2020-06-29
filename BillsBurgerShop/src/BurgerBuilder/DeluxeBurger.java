@@ -33,7 +33,7 @@ public class DeluxeBurger extends Burger {
 
     public void totalBurgerPrice(){
         totalBurgerPrice = plainBurgerPrice + totalToppingPrice;
-        System.out.println("The cost of total burger price including the toppins is $" + totalBurgerPrice);
+        System.out.println("The cost of total burger price including the toppings is $" + totalBurgerPrice);
     }
 
 

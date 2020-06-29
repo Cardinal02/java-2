@@ -22,7 +22,7 @@ public enum Bread{
         int breadChoice;
         String bread;
 
-        System.out.println("Choose your bread: ");
+        System.out.println("\nChoose your bread: ");
         System.out.println("\nPress ");
         System.out.println("\t 1 - White Bread");
         System.out.println("\t 2 - Bakery Brioche");
